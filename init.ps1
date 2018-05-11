@@ -5,7 +5,7 @@ $Temp = $env:TEMP
 Function Call($_v) {iex (New-Object System.Net.WebClient).DownloadString("$Web/expression/$_v")}
 
 # 定义 "Download" 函数，用于下载文件
-Function Download($_v) {iwr -uri "$Web/$_v" -OutFile "$Temp/$_v")
+Function Download($_v) {iwr -uri "$Web/$_v" -OutFile "$Temp/$_v"}
 
 # 检查 Windows 版本 = 10
 if($PSVersionTable.BuildVersion.Major -lt 10)
