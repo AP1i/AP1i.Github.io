@@ -1,3 +1,3 @@
-$_f = ps.zip
+$_f = "ps.zip"
 
-Download "ps.zip"
+Download "$_f"
